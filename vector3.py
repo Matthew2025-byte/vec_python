@@ -22,3 +22,12 @@ class vec3:
 
     
 
+    def __mul__(self, other):
+        pass
+    def __truediv__(self, other):
+        pass
+
+    def __add__(self, other):
+        pass
+    def __sub__(self, other):
+        pass

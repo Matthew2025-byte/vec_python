@@ -14,9 +14,9 @@ class vec2:
     def magnitude(self):
         return sqrt(self.x**2 + self.y**2)
 
-
     def normalized(self):
         self / self.magnitude()
+
 
 
     def __mul__(self, other):
