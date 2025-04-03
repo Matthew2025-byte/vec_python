@@ -39,3 +39,10 @@ class vec2:
     def __sub__(self, other):
         if isinstance(other, vec2):
             return vec2(self.x - other.x, self.y - other.y)
+    
+    @staticmethod
+    def from_polar(magnitude, degrees):
+        from math import sin, cos, radians
+        a = magnitude * cos(radians(degrees))
+        b = magnitude * sin(radians(degrees))
+        return vec2(a, b)
