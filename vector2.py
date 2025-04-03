@@ -9,8 +9,8 @@ class vec2:
 
     def __str__(self):
         return f"({self.x}, {self.y})"
-    def lin_combo(self):
-        return f"{self.x}i + {self.y}j"
+    def base_unit_al_rep(self):
+        return f"<{self.x}i + {self.y}j>"
     def al_rep(self):
         return f"<{self.x}, {self.y}>"
 
