@@ -8,11 +8,11 @@ class vec2:
         self.y = y
 
     def __str__(self):
-        return f"({self.x}, {self.y})"
+        return f"({self.x:.2f}, {self.y:.2f})"
     def base_unit_al_rep(self):
-        return f"<{self.x}i + {self.y}j>"
+        return f"<{self.x:.2f}i + {self.y:.2f}j>"
     def al_rep(self):
-        return f"<{self.x}, {self.y}>"
+        return f"<{self.x:.2f}, {self.y:.2f}>"
 
 
 
