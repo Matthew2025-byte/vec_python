@@ -2,8 +2,9 @@
 Python Vector classes
 
 Contains:
-* magnitude() -> float
-* normalized() -> vec
+* Methods
+  * magnitude() -> float
+  * normalized() -> vec
 * Operators
   * add
   * sub
