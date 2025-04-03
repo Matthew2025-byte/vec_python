@@ -7,7 +7,8 @@ class vec2:
         self.x = x
         self.y = y
 
-
+    def __str__(self):
+        return f"({self.x}, {self.y})"
 
     def sqrmagnitude(self):
         return self.x**2 + self.y**2
@@ -15,7 +16,7 @@ class vec2:
         return sqrt(self.x**2 + self.y**2)
 
     def normalized(self):
-        self / self.magnitude()
+        return self / self.magnitude()
 
 
 
