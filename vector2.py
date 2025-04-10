@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, sin, cos, radians, degrees, atan
 class vec2:
     x: float
     y: float
@@ -42,7 +42,12 @@ class vec2:
     
     @staticmethod
     def from_polar(magnitude, degrees):
-        from math import sin, cos, radians
         a = magnitude * cos(radians(degrees))
         b = magnitude * sin(radians(degrees))
         return vec2(a, b)
+    
+    @staticmethod
+    def to_polar(vec):
+        radius = vec.magnitude()
+        deg = degrees(atan(vec.y / vec.x))
+        return (radius, deg)
